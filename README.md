@@ -1,7 +1,7 @@
 # chatroom
 This program is a server and a client chatroom using sockets in C/C++. The goal is that if N clients are connected to the server, any message that is sent by any client is broadcasted to all the other clients.
 
--Each client has a name that is passed to the program as an input argument.
+- Each client has a name that is passed to the program as an input argument.
 -We need to have a multi-thread program on the server side so that the server can listen for the new connection requests
 -To join the chat room, it is enough to run the client (with one input argument as the name)
 -To leave the chat room, the user should type: "\end" (with out " ")
@@ -18,22 +18,15 @@ This program is a server and a client chatroom using sockets in C/C++. The goal 
 **Compile Instructions:**
 
 g++ chatroom_server.cpp -lpthread -o server
-
 g++ chatroom_client.cpp -lpthread -o client
-
 .a/server
-
 .a/client client1
-
 .a/client client2
-
 ...
 
 
 **Author:**
-
 Nina Nguyen
 
 **Acknowledgments:**
-
 Seattle University CPSC 5042 Systems II Homework 3
